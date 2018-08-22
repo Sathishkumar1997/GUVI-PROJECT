@@ -1,0 +1,55 @@
+body
+{
+	margin: 100;
+	padding: 0 0 10px;
+	background: url(04.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+	position:right-side;
+	border:none;
+	outline:none;
+	outline-color:#000;
+	border-radius:10%;
+}
+table{
+	margin: 50;
+	padding: 10 20 10px;
+	background: transparent;
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+	position:center;
+	border:none;
+	outline:none;
+	outline-color:#000;
+	border-radius:5%;
+	
+	
+}
+tr{
+	margin:0;
+	padding:0;
+	font-weight:bold;
+	color:#fff;
+}
+h1{
+	margin:0;
+	padding:0 0 0px;
+	text-align:center;
+	font-size:31px;
+	font-family: sans-serif;
+	border:none;
+	outline:none;
+	background-color:gray;
+	border-radius:20px;
+	box-sizing:border-box;
+	color:#fff;
+	
+}
+ input{
+	width:80%;
+	margin-bottom:20px;
+	border-radius:5px;
+}
+	

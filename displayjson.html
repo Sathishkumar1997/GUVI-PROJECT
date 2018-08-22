@@ -1,0 +1,52 @@
+<!DOCTYPE html>  
+ <html>  
+      <head>  
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+           <title>Abishak Sharma - Append Data to JSON File using PHP</title>  
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+      </head>  
+	  <body>
+	 <div class="container">
+	 <div class="table-responsive">
+	 <h1>json data</h1>
+	 <br />
+	  <table class="table table-bordered table-striped" id="employee_table">
+                     <tr>
+                        <th>Name</th>
+                        <th>lastname</th>
+                        <th>dob</th>
+						<th>email</th>
+						<th>degree</th>
+						<th>Department</th>
+						<th>phone</th>
+                      </tr>
+
+                    </table>
+	 </div>
+	 </div>
+	 </body>
+	 </html>
+	 
+	 
+	 <script>
+	 $(document).ready(function(){
+	 $.getJSON("data.json",function(data){
+	 var employee_data='';
+	 $.each(data, function(key,value){
+	 employee_data +='<tr>';
+	 employee_data +='<tr>'+value.name+'</td>';
+     employee_data +='<tr>'+value.lastname+'</td>';	
+     employee_data +='<tr>'+value.dob+'</td>';
+employee_data +='<tr>'+value.email+'</td>';	
+employee_data +='<tr>'+value.deg+'</td>';
+employee_data +='<tr>'+value.department+'</td>';
+employee_data +='<tr>'+value.phone+'</td>';
+	 employee_data +='</tr>';
+	 });
+	 $('#employee_table').append(employee_data);
+	 });
+	 });
+	 </script>
