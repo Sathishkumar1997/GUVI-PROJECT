@@ -1,6 +1,5 @@
 <?php 
   session_start(); 
-
   if (!isset($_SESSION['username'])) {
   	$_SESSION['msg'] = "You must log in first";
   	header('location: login.php');
@@ -17,7 +16,6 @@
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<form name="register" action="formpage.html" method="post">
-
 </head>
 <body>
 
