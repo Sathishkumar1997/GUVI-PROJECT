@@ -13,7 +13,7 @@ if (!empty($first) || !empty($last) || !empty($dob) || !empty($gender) || !empty
     $dbUsername = "root";
     $dbPassword = "sathish01";
     $dbname = "demo2";
-    //create connection
+ 
     $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
     if (mysqli_connect_error()) {
      die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
